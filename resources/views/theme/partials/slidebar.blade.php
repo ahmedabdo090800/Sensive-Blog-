@@ -41,7 +41,7 @@ $categories=Category::get();
                   @foreach ($categories as $category)
 
                      <li>
-                       <a href="#" class="d-flex justify-content-between">
+                       <a href="{{ route('theme.category',['id'=>$category->id]) }}" class="d-flex justify-content-between">
                          <p>{{$category->name}}</p>
                          <p>(03)</p>
                        </a>
